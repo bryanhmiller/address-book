@@ -1,0 +1,14 @@
+@import "colors";
+
+body {
+	// background-image: url("https://s-media-cache-ak0.pinimg.com/originals/d7/da/92/d7da9215efa45e152ec1fe941de3a613.jpg");	
+	// background-size: cover;
+	color: $myNotWhite;	
+	background-color: $myBlue;
+}
+
+.panel-body {
+	color: $darkGray;
+	background-color: $myNotWhite;
+}
+
