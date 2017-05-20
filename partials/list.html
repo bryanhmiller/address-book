@@ -1,1 +1,9 @@
-<h1>{{test}}</h1>
+<div class="panel panel-success">
+	<div class="panel-body" ng-repeat="item in items">
+		<p>{{item.firstName}} {{item.lastName}}</p>
+		<p>{{item.streetAddress}}</p>
+		<p>{{item.city}}, {{item.state}} {{item.zipCode}}</p>
+		<p>{{item.phone}}</p>
+		<p>{{item.email}}</p>
+	</div>
+</div>

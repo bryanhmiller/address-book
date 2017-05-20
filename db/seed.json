@@ -1,32 +1,32 @@
 {
-    "items": {
-        "item0": {
-            "first-name": "True",
-            "last-na me": "Dat",
-            "street-address": "123 Main St.",
+    "addresses": {
+        "address0": {
+            "firstName": "True",
+            "lastName": "Dat",
+            "streetAddress": "123 Main St.",
             "city": "Nashville",
             "state": "TN",
-            "zip-code": "37013",
+            "zipCode": "37013",
             "phone": "615-555-1212",
             "email": "tdat@yahoo.com"
         },
-        "item1": {
-            "first-name": "Truett",
-            "last-name": "Data",
-            "street-address": "4123 File Path Way",
+        "address1": {
+            "firstName": "Truett",
+            "lastName": "Data",
+            "streetAddress": "4123 File Path Way",
             "city": "Murfreesboro",
             "state": "TN",
-            "zip-code": "37130",
+            "zipCode": "37130",
             "phone": "615-555-6043",
             "email": "tdata@hotmail.com"
         },
-        "item2": {
-            "first-name": "Jason",
-            "last-name": "Seed",
-            "street-address": "500 Interstate Blvd.",
+        "address2": {
+            "firstName": "Jason",
+            "lastName": "Seed",
+            "streetAddress": "500 Interstate Blvd.",
             "city": "Nashville",
             "state": "TN",
-            "zip-code": "37210",
+            "zipCode": "37210",
             "phone": "615-555-5648",
             "email": "jseed@gmail.com"
         }
