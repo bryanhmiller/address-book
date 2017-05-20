@@ -1,9 +1,14 @@
-<div class="panel panel-success">
-	<div class="panel-body" ng-repeat="item in items">
-		<p>{{item.firstName}} {{item.lastName}}</p>
-		<p>{{item.streetAddress}}</p>
-		<p>{{item.city}}, {{item.state}} {{item.zipCode}}</p>
-		<p>{{item.phone}}</p>
-		<p>{{item.email}}</p>
-	</div>
+<div class="row">
+	<div  ng-repeat="item in items" class="col-xs-4">
+		<div class="panel panel-success">
+			<div class="panel-body">
+                <div class="pull-right"><button class="btn btn-danger fa fa-trash-o" ng-click="deleteItem(item.id)"></button></div>
+				<h4>{{item.firstName}} {{item.lastName}}</h4>
+				<h4>{{item.streetAddress}}</h4>
+				<h4>{{item.city}}, {{item.state}} {{item.zipCode}}</h4>
+				<h4>{{item.phone}}</h4>
+				<h4>{{item.email}}</h4>
+			</div>
+		</div>
+	</div>	
 </div>

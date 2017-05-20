@@ -14,13 +14,13 @@ app.controller("ListCtrl", function($scope, AddressFactory) {
 
   getItems();
 
-  // $scope.deleteItem = (id) => {
-  // 	AddressFactory.deletz(id).then(() => {
-  // 		getItems();
-  // 	}).catch((error) => {
-  // 		console.log("deleteItem error", error);
-  // 	});
-  // }; 
+  $scope.deleteItem = (id) => {
+  	AddressFactory.deletz(id).then(() => {
+  		getItems();
+  	}).catch((error) => {
+  		console.log("deleteItem error", error);
+  	});
+  }; 
 
   // $scope.inputChange = (item) => {
   // 	AddressFactory.editItem(item).then(() => {
