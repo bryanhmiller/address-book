@@ -2,11 +2,13 @@
     "items": {
         "item0": {
             "first-name": "True",
-            "last-name": "Dat",
+            "last-na me": "Dat",
             "street-address": "123 Main St.",
             "city": "Nashville",
             "state": "TN",
-            "zip-code": "37013"
+            "zip-code": "37013",
+            "phone": "615-555-1212",
+            "email": "tdat@yahoo.com"
         },
         "item1": {
             "first-name": "Truett",
@@ -14,7 +16,9 @@
             "street-address": "4123 File Path Way",
             "city": "Murfreesboro",
             "state": "TN",
-            "zip-code": "37130"
+            "zip-code": "37130",
+            "phone": "615-555-6043",
+            "email": "tdata@hotmail.com"
         },
         "item2": {
             "first-name": "Jason",
@@ -22,7 +26,9 @@
             "street-address": "500 Interstate Blvd.",
             "city": "Nashville",
             "state": "TN",
-            "zip-code": "37210"
+            "zip-code": "37210",
+            "phone": "615-555-5648",
+            "email": "jseed@gmail.com"
         }
     }
 }
