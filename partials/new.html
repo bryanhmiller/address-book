@@ -1,0 +1,30 @@
+<div ng-show="!showListView">
+	<h3>New Contact</h3>
+        <form>
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="John" ng-model="newContact.firstName"/>
+                <label>Last Name</label>
+                <input type="text" class="form-control" placeholder="Doe" ng-model="newContact.lastName"/>
+            </div>
+        
+            <div class="form-group">
+                <label>Street Address</label>
+                <input type="text" class="form-control" placeholder="123 Elm St." ng-model="newContact.streetAddress"/>
+                <label>City</label>
+                <input type="text" class="form-control" placeholder="Dallas" ng-model="newContact.city"/>
+                <label>State</label>
+                <input type="text" class="form-control" placeholder="TX" ng-model="newContact.state"/>
+                <label>Zip Code</label>
+                <input type="text" class="form-control" placeholder="75652" ng-model="newContact.zipCode"/>
+            </div>
+        
+              
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" class="form-control" placeholder="615-555-1212" ng-model="newContact.phone"/>
+                <label>Email</label>
+                <input type="text" class="form-control" placeholder="email@email.com" ng-model="newContact.email"/>
+            </div>
+            <button class="btn btn-default" ng-click="addNewItem()">Submit</button>
+        </form>
