@@ -1,6 +1,4 @@
 app.controller("ListCtrl", function($scope, AddressFactory) {
-  console.log("inside ListCtrl");
-  $scope.test = "This"
 	$scope.items = [];
 
   let getItems = () => {	
@@ -22,12 +20,12 @@ app.controller("ListCtrl", function($scope, AddressFactory) {
   	});
   }; 
 
-  // $scope.inputChange = (item) => {
-  // 	AddressFactory.editItem(item).then(() => {
-  // 		//???????????
-  // 	}).catch((error) => {
-  // 		console.log("inputChange error", error);
-  // 	});
-  // };
+  $scope.inputChange = (item) => {
+  	AddressFactory.editItem(item).then(() => {
+  		//???????????
+  	}).catch((error) => {
+  		console.log("inputChange error", error);
+  	});
+  };
 
 });

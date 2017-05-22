@@ -1,5 +1,4 @@
 app.controller("NewCtrl", function($http, $location, $q, $scope, FIREBASE_CONFIG, AddressFactory) {
-  console.log("inside NewCtrl");
 
   $scope.addNewItem = () => {
     // $scope.newContact.isCompleted = false;
