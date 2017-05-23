@@ -13,7 +13,6 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
             });
           }
           resolve(itemz);
-          console.log("itemz", itemz);
       }).catch((error) => {
         reject(error);
       });  
@@ -57,14 +56,20 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
   let editItem = (item) => {
     console.log("item in ItemFactory", item);
     return $q((resolve, reject) => {
-      $http.put(`${FIREBASE_CONFIG.databaseURL}/addresses/${item.id}.json`, 
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/addresses/${itemId}.json`, 
         JSON.stringify({
-          assignedTo: item.assignedTo,
-          isCompleted: item.isCompleted,
-          task: item.task
+          firstName: item.firstName,
+          lastName: item.lastName,
+          streetAddress: item.streetAddress,
+          city: item.city,
+          state: item.state,
+          zipCode: item.zipCode,
+          phone: item.phone,
+          email: item.email
         })  
       ).then((resultz) => {
         resolve(resultz);
+        console.log("editItem resultz", resultz);
       }).catch((error) => {
         console.log("editItem error", error);
       });

@@ -3,6 +3,7 @@ app.controller("EditCtrl", function($location, $routeParams, $scope, AddressFact
 
   AddressFactory.getSingleItem($routeParams.id).then((results) => {
   	$scope.newContact = results.data;
+    conole.log("getSingleItem $scope.newContact", $scope.newContact);
   }).catch((error) => {
   	console.log("getSingleItem error", error);
   });

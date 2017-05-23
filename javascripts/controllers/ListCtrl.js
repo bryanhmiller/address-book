@@ -4,7 +4,6 @@ app.controller("ListCtrl", function($scope, AddressFactory) {
   let getItems = () => {	
   	AddressFactory.getItemList().then((itemz) => {
       $scope.items = itemz;
-      console.log("itemz", itemz);
     }).catch((error) => {
       console.log("get Error", error);
     });
