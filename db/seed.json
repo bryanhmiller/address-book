@@ -30,5 +30,15 @@
             "phone": "615-555-5648",
             "email": "jseed@gmail.com"
         }
+    },
+    "users": {
+        "user0": {
+            "uid": "B0f3JYdiI2Q7E8iKEEhklWWWgh53",
+            "username": "Abe"
+        },
+        "user1": {
+            "uid": "c0tjEn777JdxHeSGziUjDaJaseG3",
+            "username": "Bebe"
+        }
     }
 }

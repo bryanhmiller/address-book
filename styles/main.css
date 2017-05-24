@@ -1,7 +1,11 @@
 body {
-  color: #eee;
-  background-color: #023a93; }
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/12/b5/78/12b578602d944fad611363307ed14797.jpg");
+  background-size: cover;
+  color: #eee; }
 
 .panel-body {
-  color: #1c2026;
-  background-color: #eee; }
+  color: #1c2026; }
+
+.panel.panel-success {
+  background-color: rgba(238, 238, 238, 0.8);
+  box-shadow: 10px 10px 25px #1c2026; }
