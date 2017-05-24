@@ -14,12 +14,12 @@ app.config(function($routeProvider) {
       controller: "NewCtrl"
     })
     .when("/edit/:id", {
-      templateUrl: "partials/new.html",
+      templateUrl: "partials/edit.html",
       controller: "EditCtrl"
     })
+    .otherwise("/list");
+});
     // .when("/items/view/:id", {
     //   templateUrl: "partials/item-view.html",
     //   controller: "ItemViewCtrl"
     // })
-    .otherwise("/list");
-});

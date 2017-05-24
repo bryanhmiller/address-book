@@ -53,19 +53,19 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
     });
   };
 
-  let editItem = (item) => {
-    console.log("item in ItemFactory", item);
+  let editItem = (address) => {
+    console.log("address in AddressFactory", address);
     return $q((resolve, reject) => {
-      $http.put(`${FIREBASE_CONFIG.databaseURL}/addresses/${itemId}.json`, 
+      $http.put(`${FIREBASE_CONFIG.databaseURL}/addresses/${address.id}.json`, 
         JSON.stringify({
-          firstName: item.firstName,
-          lastName: item.lastName,
-          streetAddress: item.streetAddress,
-          city: item.city,
-          state: item.state,
-          zipCode: item.zipCode,
-          phone: item.phone,
-          email: item.email
+          firstName: address.firstName,
+          lastName: address.lastName,
+          streetAddress: address.streetAddress,
+          city: address.city,
+          state: address.state,
+          zipCode: address.zipCode,
+          phone: address.phone,
+          email: address.email
         })  
       ).then((resultz) => {
         resolve(resultz);

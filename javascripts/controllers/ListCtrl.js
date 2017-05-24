@@ -1,4 +1,4 @@
-app.controller("ListCtrl", function($scope, AddressFactory) {
+app.controller("ListCtrl", function($location, $scope, AddressFactory) {
 	$scope.items = [];
 
   let getItems = () => {	
@@ -19,12 +19,12 @@ app.controller("ListCtrl", function($scope, AddressFactory) {
   	});
   }; 
 
-  $scope.inputChange = (item) => {
-  	AddressFactory.editItem(item).then(() => {
-  		//???????????
-  	}).catch((error) => {
-  		console.log("inputChange error", error);
-  	});
+  $scope.inputChange = (id) => {
+  	// AddressFactory.editItem(item).then(() => {
+      $location.url(`/edit/${id}`);
+  	// }).catch((error) => {
+  		// console.log("inputChange error", error);
+  	// });
   };
 
 });

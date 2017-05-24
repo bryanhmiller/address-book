@@ -1,15 +1,15 @@
 app.controller("EditCtrl", function($location, $routeParams, $scope, AddressFactory) {
-  $scope.newContact = {};
-
+  $scope.address = {};
+  console.log("edit ctrl id", $routeParams.id)
   AddressFactory.getSingleItem($routeParams.id).then((results) => {
-  	$scope.newContact = results.data;
-    conole.log("getSingleItem $scope.newContact", $scope.newContact);
+    $scope.address = results.data;
+    console.log("getSingleItem $scope.newContact", $scope.address);
   }).catch((error) => {
   	console.log("getSingleItem error", error);
   });
 
   $scope.addNewItem = () => {
-  	AddressFactory.editItem($scope.newContact).then(() => {
+  	AddressFactory.editItem($scope.address).then(() => {
   		$location.url("/list");
   	}).catch((error) => {
   		console.log("editItem error", error);
