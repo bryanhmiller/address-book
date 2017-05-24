@@ -1,5 +1,8 @@
 <div class="row">
-	<div  ng-repeat="item in items" class="col-xs-4">
+  <div class="form-group col-xs-10 col-xs-offset-1">
+    <input type="text" class="form-control" placeholder="Search" ng-model="searchText">
+  </div>
+	<div  ng-repeat="item in items | filter: searchText" class="col-xs-4">
 		<div class="panel panel-success">
 			<div class="panel-body">
                 <div class="pull-right">
