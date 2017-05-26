@@ -1,8 +1,9 @@
-app.controller("ListCtrl", function($location, $scope, AddressFactory) {
+app.controller("ListCtrl", function($location, $rootScope, $scope, AddressFactory) {
 	$scope.items = [];
 
   let getItems = () => {	
-  	AddressFactory.getItemList().then((itemz) => {
+  	AddressFactory.getItemList($rootScope).then((itemz) => {
+      console.log("inside getItems");
       $scope.items = itemz;
     }).catch((error) => {
       console.log("get Error", error);

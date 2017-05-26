@@ -1,5 +1,6 @@
 app.controller("EditCtrl", function($location, $routeParams, $scope, AddressFactory) {
   $scope.address = {};
+
   AddressFactory.getSingleItem($routeParams.id).then((results) => {
     $scope.address = results.data;
     console.log("getSingleItem $scope.newContact", $scope.address);

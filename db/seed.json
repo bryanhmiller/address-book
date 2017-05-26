@@ -8,7 +8,8 @@
             "state": "TN",
             "zipCode": "37013",
             "phone": "615-555-1212",
-            "email": "tdat@yahoo.com"
+            "email": "tdat@yahoo.com",
+            "uid": "B0f3JYdiI2Q7E8iKEEhklWWWgh53"
         },
         "address1": {
             "firstName": "Truett",
@@ -18,8 +19,8 @@
             "state": "TN",
             "zipCode": "37130",
             "phone": "615-555-6043",
-            "email": "tdata@hotmail.com"
-        },
+            "email": "tdata@hotmail.com",
+            "uid": "c0tjEn777JdxHeSGziUjDaJaseG3"        },
         "address2": {
             "firstName": "Jason",
             "lastName": "Seed",
@@ -28,8 +29,8 @@
             "state": "TN",
             "zipCode": "37210",
             "phone": "615-555-5648",
-            "email": "jseed@gmail.com"
-        }
+            "email": "jseed@gmail.com",
+            "uid": "B0f3JYdiI2Q7E8iKEEhklWWWgh53"        }
     },
     "users": {
         "user0": {

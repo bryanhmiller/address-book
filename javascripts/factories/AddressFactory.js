@@ -1,10 +1,12 @@
 app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
 
-  let getItemList = () => {
+  let getItemList = (userId) => {
     let itemz = [];
+    console.log("userId in getItemList", userId);
     return $q((resolve, reject) => {
-      $http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json`)
+      $http.get(`${FIREBASE_CONFIG.databaseURL}/addresses.json?orderBy="uid"&equalTo="${userId}"`)
       .then((fbItems) => {
+        console.log("fbItems in getItemList", fbItems);
           var itemCollection = fbItems.data;
           if(itemCollection !== null) {
             Object.keys(itemCollection).forEach((key) => {
@@ -13,6 +15,7 @@ app.factory("AddressFactory", function($http, $q, FIREBASE_CONFIG) {
             });
           }
           resolve(itemz);
+          console.log("itemz in AddressFactory", itemz)
       }).catch((error) => {
         reject(error);
       });  

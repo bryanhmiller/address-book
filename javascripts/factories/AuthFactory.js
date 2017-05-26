@@ -34,6 +34,7 @@ app.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG) {
       firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
       .then((resultz) => {
         resolve(resultz);
+        console.log("resultz", resultz);
       }).catch((error) => {
         reject(error);
       });
